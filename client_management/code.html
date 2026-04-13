@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Golden Aura | Client Management</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "tertiary": "#415ba4",
+                    "on-surface": "#1c1b1b",
+                    "inverse-primary": "#e9c349",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fcf9f8",
+                    "on-primary-fixed-variant": "#574500",
+                    "on-primary-fixed": "#241a00",
+                    "secondary-fixed": "#e5e2e1",
+                    "primary-fixed": "#ffe088",
+                    "on-secondary-fixed-variant": "#474746",
+                    "surface-container-low": "#f6f3f2",
+                    "on-primary": "#ffffff",
+                    "primary": "#735c00",
+                    "outline-variant": "#d0c5af",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#27438a",
+                    "surface-tint": "#735c00",
+                    "inverse-surface": "#313030",
+                    "on-secondary-container": "#636262",
+                    "tertiary-fixed": "#dbe1ff",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-tertiary-container": "#254188",
+                    "on-tertiary-fixed": "#00174b",
+                    "on-background": "#1c1b1b",
+                    "surface": "#fcf9f8",
+                    "background": "#fcf9f8",
+                    "primary-container": "#d4af37",
+                    "on-surface-variant": "#4d4635",
+                    "tertiary-fixed-dim": "#b4c5ff",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "outline": "#7f7663",
+                    "on-error": "#ffffff",
+                    "on-primary-container": "#554300",
+                    "surface-variant": "#e5e2e1",
+                    "surface-container": "#f0eded",
+                    "tertiary-container": "#97b0ff",
+                    "surface-container-high": "#eae7e7",
+                    "surface-container-highest": "#e5e2e1",
+                    "secondary": "#5f5e5e",
+                    "surface-dim": "#dcd9d9",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "secondary-container": "#e2dfde",
+                    "primary-fixed-dim": "#e9c349"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "1.5rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .gold-gradient {
+            background: linear-gradient(45deg, #d4af37, #735c00);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-[#fcf9f8]/95 dark:bg-[#1c1b1b]/95 backdrop-blur-xl z-50 shadow-[0_20px_40px_rgba(28,27,27,0.06)]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="Close up portrait of a sophisticated executive man in a tailored charcoal suit against a minimal grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYpktajXewX1vXJlkMly29OtX7Q-kiKZ8-Yq0nVx0FtzV-7S8foBrMiAPGY1w0dGmS_lQVnZX9R0FEZMk5sUklC0UoheAcbuaU5MKW0XImQm1k67eg7wdM6wv2rgVKkVGBBSlQt31zLV28NPWh2ZkzEmo8x9fgFzBkIZuUhmGWAd6XwBHnYRhXbXUUDpKvaHS31VIRuLCrgIqTM5JIL5r6iCf2QfICiRn3xRzMQzlcy5P17MzRhsml_ROXRX5BkT7X3Lufuhb9VZw"/>
+</div>
+<h1 class="text-2xl font-notoSerif italic text-[#735c00] dark:text-[#d4af37] tracking-tight font-bold">Golden Aura</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#735c00] hover:opacity-80 transition-opacity active:scale-95 duration-200" data-icon="notifications">notifications</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-12">
+<p class="font-manrope text-[10px] uppercase tracking-[0.2em] font-bold text-primary mb-2">Concierge Access</p>
+<h2 class="text-5xl font-notoSerif font-bold text-on-surface tracking-tight leading-tight max-w-2xl">
+                Curating excellence for our <span class="italic text-primary">esteemed</span> clientele.
+            </h2>
+</section>
+<!-- Search & Filter Bar (Editorial Style) -->
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 mb-12 border-b border-outline-variant/20 pb-8">
+<div class="w-full md:w-1/2">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-0 bottom-3 text-outline">search</span>
+<input class="w-full bg-transparent border-none border-b border-outline-variant/50 focus:ring-0 focus:border-primary pl-8 pb-2 font-manrope text-lg placeholder:text-outline/60 transition-all" placeholder="Search by name, legacy or event type" type="text"/>
+</div>
+</div>
+<div class="flex gap-4">
+<button class="px-6 py-2 rounded-full border border-outline-variant/30 text-on-surface-variant font-label text-sm hover:bg-surface-container-low transition-colors">Alphabetical</button>
+<button class="px-6 py-2 rounded-full gold-gradient text-on-primary font-label text-sm font-bold shadow-lg shadow-primary/20">+ Add New Client</button>
+</div>
+</div>
+<!-- Bento Grid Clients -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Client Card 1 -->
+<div class="group bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(28,27,27,0.04)] hover:shadow-[0_30px_60px_rgba(28,27,27,0.08)] transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-8">
+<div class="w-20 h-20 rounded-full overflow-hidden border-2 border-primary-container/20 group-hover:scale-105 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="Elegant mature woman with warm lighting, wearing diamond earrings and a silk cream blouse, high-end studio photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACUz5Lqhtg1vQcSVjGC6eS5TwcTc854IMfsd_ZTH1t63gJcV0uxHb8sUHW3WyOOemOxfV-KknvulNPImOgg-PbZvmjcM3OMXjVzBUqGiN4ACcO05tFHUJYbWeZ_h5bqAeqDUywUML8bjclEIwrVf_-MK31F7jEBYdwjt5e0NM0EOiCQqP73XsxHSOOmVf84DW6EZFDt2fxEbpLSt9Kv4eaQBlJtIEWMpi7sU1NlKZOsW1I5ixPV4vkCEqF9XJGltlBeo0wuHA9uS8"/>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">north_east</span>
+</div>
+<div class="mb-6">
+<h3 class="text-2xl font-notoSerif font-bold text-on-surface mb-1">Eleanor Vance</h3>
+<p class="text-sm text-outline font-manrope font-medium tracking-wide">Legacy Member • Paris</p>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+<span class="text-sm">e.vance@vancestudios.com</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">history</span>
+<span class="text-sm">Last: Summer Gala '23</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/10">
+<div class="flex justify-between items-center">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-bold">Total Events</p>
+<p class="text-xl font-notoSerif font-bold text-primary">12</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-bold">Priority</p>
+<p class="text-sm font-manrope font-bold text-on-surface-variant">Diamond</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Card 2 (Horizontal Layout within Bento) -->
+<div class="group bg-surface-container-low rounded-xl p-8 lg:col-span-2 shadow-[0_20px_40px_rgba(28,27,27,0.04)] hover:shadow-[0_30px_60px_rgba(28,27,27,0.08)] transition-all cursor-pointer flex flex-col md:flex-row gap-8">
+<div class="md:w-1/3 h-full min-h-[200px] rounded-xl overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="Fashion forward young entrepreneur leaning against a mahogany desk in a sunlit modern office, warm sunset lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4vYRR31BASwP21-zRhMXEb0DjxiY7qKLo40IOfS01Hv6DJ9lghvQyupPAxB_OIQdng_UantzU78Sj1J2UAPv55WBcZmBH0_NVh2SW4DcPYiIqEY3xSyd-6GnESZk3P4DmDlmT6Ca-xMoG6pbib5wV4e0bQY0UdI6OfNAx9Qm8pRcuay0X73c0yQuI_FNRtvZnSZ24nSMm4qWjnTq1wsm1IZiTdImCkL_1Qh2G8gCJdhD8GOlt9JqonX_iylcjz246k5yLXW0VCrA"/>
+</div>
+<div class="flex-1 flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-3xl font-notoSerif font-bold text-on-surface mb-1">Julian Sterling</h3>
+<p class="text-sm text-outline font-manrope font-medium tracking-wide">Tech Founder • San Francisco</p>
+</div>
+<span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">VIP Elite</span>
+</div>
+<p class="text-on-surface-variant text-sm font-manrope leading-relaxed mb-6 max-w-md">
+                            Julian specializes in ultra-modern rooftop launches. History includes the 'Neural-Link Debut' and 'Sterling Foundation Charity'. Preference for minimalist gold accents and live jazz.
+                        </p>
+</div>
+<div class="flex flex-wrap gap-4 pt-6 border-t border-outline-variant/20">
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-[18px] text-primary">call</span>
+<span class="text-xs font-bold">+1 (555) 012-8899</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 bg-surface-container-lowest rounded-lg border border-outline-variant/10">
+<span class="material-symbols-outlined text-[18px] text-primary" style="font-variation-settings: 'FILL' 1;">calendar_today</span>
+<span class="text-xs font-bold">Upcoming: Dec 15</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Card 3 -->
+<div class="group bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(28,27,27,0.04)] hover:shadow-[0_30px_60px_rgba(28,27,27,0.08)] transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-8">
+<div class="w-20 h-20 rounded-full overflow-hidden border-2 border-primary-container/20 group-hover:scale-105 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="Professional woman with a confident smile, wearing a structured blazer and minimalist gold jewelry, soft focus office interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_M2EjlbuS6TKdkzgd2S3xFNf2du7QLIehnYteJZeLQuTOQsbw26kZhPf04Z45ScFxMHkiTvgPedVCROYeCzh6fvAOubwyQliul9VWUBSdqJ8qobcve2WqeLZ5k9G6HrKZGDY-BMgyagKbPTHfKAtEsV7pjd57_PEBgEbPP1qAq_fTTju3Vc1UB4UfRcW9AAHls8v0NGIIKQGAbk1q65U1Wpo8sRBYmd3Jgr84ESVEtRSN_KcWQiZlTsXRn8qefjtLkLy-FpFBWC0"/>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">north_east</span>
+</div>
+<div class="mb-6">
+<h3 class="text-2xl font-notoSerif font-bold text-on-surface mb-1">Amara Kalu</h3>
+<p class="text-sm text-outline font-manrope font-medium tracking-wide">Cultural Liaison • London</p>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+<span class="text-sm">amara.k@heritage.uk</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">history</span>
+<span class="text-sm">Last: Art Basel Private View</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/10">
+<div class="flex justify-between items-center">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-bold">Total Events</p>
+<p class="text-xl font-notoSerif font-bold text-primary">8</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-bold">Priority</p>
+<p class="text-sm font-manrope font-bold text-on-surface-variant">Platinum</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Client Card 4 -->
+<div class="group bg-surface-container-lowest rounded-xl p-8 shadow-[0_20px_40px_rgba(28,27,27,0.04)] hover:shadow-[0_30px_60px_rgba(28,27,27,0.08)] transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-8">
+<div class="w-20 h-20 rounded-full overflow-hidden border-2 border-primary-container/20 group-hover:scale-105 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="Man in high-end black tuxedo, elegant setting with soft bokeh lights, cinematic photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfEo_PAD_bn_kj3PSPIQrGtQMEOyxv564ksz7sAOIjOQR-ESplc1TB7UUFO07oqo31WUHIlXjgZIlazODCVJN_a8PniFxLmJZiP_5QgNGbUulaXsH3vdiYvB7oYBNLvaOrLr7QP5vVn5nAAnI6ltLXlfUFdubX55CEtWMol7Ck7dGS2i27lAeYpWe6uiu3tucsUv9V_kCy-9L7yIjP6Od_Xoza5CLCG07ZpU8nyqA3Cwa9jntJY-7_kvXJRGkZeGxMqIvNWnVGfuQ"/>
+</div>
+<span class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors">north_east</span>
+</div>
+<div class="mb-6">
+<h3 class="text-2xl font-notoSerif font-bold text-on-surface mb-1">Maximilian Roth</h3>
+<p class="text-sm text-outline font-manrope font-medium tracking-wide">Hedge Fund Director • Zurich</p>
+</div>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+<span class="text-sm">m.roth@rothcap.ch</span>
+</div>
+<div class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">history</span>
+<span class="text-sm">Last: Winter Lodge Retreat</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/10">
+<div class="flex justify-between items-center">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-bold">Total Events</p>
+<p class="text-xl font-notoSerif font-bold text-primary">4</p>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-outline font-bold">Priority</p>
+<p class="text-sm font-manrope font-bold text-on-surface-variant">Gold</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Empty State / Placeholder for UX -->
+<div class="bg-surface border-2 border-dashed border-outline-variant/30 rounded-xl p-8 flex flex-col items-center justify-center text-center">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-outline text-3xl">person_add</span>
+</div>
+<h4 class="font-notoSerif font-bold text-on-surface mb-2">Expand the Circle</h4>
+<p class="text-xs text-outline font-manrope max-w-[180px]">Onboard a new prestige client to the Golden Aura roster.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fcf9f8]/95 dark:bg-[#1c1b1b]/95 backdrop-blur-xl rounded-t-3xl border-t border-[#d0c5af]/20 shadow-[0_-10px_30px_rgba(28,27,27,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#4d4635] dark:text-[#d0c5af] px-4 py-2 hover:text-[#735c00] dark:hover:text-[#d4af37] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] dark:text-[#d0c5af] px-4 py-2 hover:text-[#735c00] dark:hover:text-[#d4af37] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Events</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] bg-[#d4af37]/10 rounded-xl px-4 py-2 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">group</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Clients</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] dark:text-[#d0c5af] px-4 py-2 hover:text-[#735c00] dark:hover:text-[#d4af37] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Calendar</span>
+</a>
+</nav>
+</body></html>

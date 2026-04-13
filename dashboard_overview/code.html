@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#93000a",
+                        "tertiary": "#415ba4",
+                        "on-surface": "#1c1b1b",
+                        "inverse-primary": "#e9c349",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-primary-fixed": "#241a00",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-fixed": "#ffe088",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "primary": "#735c00",
+                        "outline-variant": "#d0c5af",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "surface-tint": "#735c00",
+                        "inverse-surface": "#313030",
+                        "on-secondary-container": "#636262",
+                        "tertiary-fixed": "#dbe1ff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-tertiary-container": "#254188",
+                        "on-tertiary-fixed": "#00174b",
+                        "on-background": "#1c1b1b",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "primary-container": "#d4af37",
+                        "on-surface-variant": "#4d4635",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "outline": "#7f7663",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#554300",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container": "#f0eded",
+                        "tertiary-container": "#97b0ff",
+                        "surface-container-high": "#eae7e7",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary": "#5f5e5e",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#e2dfde",
+                        "primary-fixed-dim": "#e9c349"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    fontFamily: {
+                        "notoSerif": ["Noto Serif", "serif"],
+                        "manrope": ["Manrope", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-notoSerif { font-family: 'Noto Serif', serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen pb-24 md:pb-0">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-[#fcf9f8]/95 backdrop-blur-xl z-50 shadow-[0_20px_40px_rgba(28,27,27,0.06)]">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="professional executive headshot of a refined man in a tailored charcoal suit against a minimal studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBos1xJvThksD41vg3zCMmp611KfHpNX1TT2Pvlo9kx60X3D5iDDdQ44D4WKppvLWgn7mzZkkUK06TAigTMxZS1Vx_KoUxYDUWuMEs6ziZI93iFetpMtSFMnZ0CWgEj5hs6lk5xA4vmaS3xBAnGOAF0kWgEU-zUdGXj_vQjh96yVXC46YRoATVshTGNpTizxuyC6BFGVkDzXpTGo3Kx2QIAS2wKcXE48frVDGBJg_cgZuzrngHQZIzkQETKjUlbiG2svLEoaemYEfg"/>
+</div>
+<h1 class="text-2xl font-notoSerif italic text-[#735c00] tracking-tight font-bold">Golden Aura</h1>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#4d4635] hover:opacity-80 transition-opacity active:scale-95 duration-200">notifications</button>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-7xl mx-auto space-y-10">
+<!-- Welcome Message Section -->
+<section class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-1">
+<p class="font-manrope text-[12px] uppercase tracking-[0.2em] text-primary font-bold">The Gilded Curator</p>
+<h2 class="text-4xl md:text-5xl font-notoSerif font-bold text-on-surface -ml-0.5 tracking-tight">Good morning, Julian</h2>
+<p class="text-on-surface-variant max-w-md font-light">Your portfolio is flourishing. Today, you have three high-profile site visits and one final walkthrough.</p>
+</div>
+<div class="hidden md:flex items-center gap-4">
+<button class="bg-gradient-to-r from-primary-container to-primary text-on-primary px-8 py-3 rounded-xl font-manrope font-bold text-sm tracking-wide shadow-lg active:scale-95 transition-transform">
+                    Create New Event
+                </button>
+</div>
+</section>
+<!-- Bento Grid: Stats Summary -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_10px_30px_rgba(28,27,27,0.02)] flex flex-col justify-between h-48 border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl">dashboard</span>
+<span class="text-xs font-bold text-primary bg-primary/5 px-3 py-1 rounded-full uppercase tracking-tighter">+12%</span>
+</div>
+<div>
+<h3 class="text-4xl font-notoSerif font-bold">128</h3>
+<p class="text-on-surface-variant font-manrope text-sm uppercase tracking-widest font-bold mt-1">Total Events</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_10px_30px_rgba(28,27,27,0.02)] flex flex-col justify-between h-48 border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl">event</span>
+</div>
+<div>
+<h3 class="text-4xl font-notoSerif font-bold">14</h3>
+<p class="text-on-surface-variant font-manrope text-sm uppercase tracking-widest font-bold mt-1">Upcoming</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0_10px_30px_rgba(28,27,27,0.02)] flex flex-col justify-between h-48 border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary text-3xl">check_circle</span>
+</div>
+<div>
+<h3 class="text-4xl font-notoSerif font-bold">114</h3>
+<p class="text-on-surface-variant font-manrope text-sm uppercase tracking-widest font-bold mt-1">Completed</p>
+</div>
+</div>
+</section>
+<!-- Revenue & Social Media Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-8 pb-12">
+<!-- Revenue Overview (Chart Simulation) -->
+<div class="lg:col-span-2 bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+<div class="flex justify-between items-center mb-8">
+<div>
+<h3 class="text-2xl font-notoSerif font-bold">Revenue Overview</h3>
+<p class="text-on-surface-variant text-sm font-manrope uppercase tracking-widest mt-1">Fiscal Year Performance</p>
+</div>
+<div class="flex gap-2">
+<button class="text-xs font-bold font-manrope px-4 py-2 rounded-lg bg-surface-container-lowest text-on-surface">Monthly</button>
+<button class="text-xs font-bold font-manrope px-4 py-2 rounded-lg text-on-surface-variant">Yearly</button>
+</div>
+</div>
+<div class="h-64 w-full flex items-end gap-2 md:gap-4 relative px-2">
+<!-- Abstract Chart Design using Tonal Layers -->
+<div class="flex-1 bg-primary/10 rounded-t-lg h-[40%] transition-all hover:bg-primary/20 cursor-pointer"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg h-[55%] transition-all hover:bg-primary/20 cursor-pointer"></div>
+<div class="flex-1 bg-primary/20 rounded-t-lg h-[45%] transition-all hover:bg-primary/30 cursor-pointer"></div>
+<div class="flex-1 bg-gradient-to-t from-primary/30 to-primary-container rounded-t-lg h-[85%] relative group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 bg-on-background text-on-primary text-[10px] px-2 py-1 rounded hidden group-hover:block">$42.5k</div>
+</div>
+<div class="flex-1 bg-primary/10 rounded-t-lg h-[60%] transition-all hover:bg-primary/20 cursor-pointer"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg h-[75%] transition-all hover:bg-primary/20 cursor-pointer"></div>
+<div class="flex-1 bg-primary/20 rounded-t-lg h-[50%] transition-all hover:bg-primary/30 cursor-pointer"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg h-[90%] transition-all hover:bg-primary/20 cursor-pointer"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg h-[40%] transition-all hover:bg-primary/20 cursor-pointer"></div>
+<div class="flex-1 bg-primary/10 rounded-t-lg h-[65%] transition-all hover:bg-primary/20 cursor-pointer"></div>
+</div>
+<div class="flex justify-between mt-4 text-[10px] font-manrope text-on-surface-variant uppercase tracking-tighter opacity-60">
+<span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span>
+</div>
+</div>
+<!-- Social Media Stats -->
+<div class="bg-surface-container-highest p-8 rounded-xl flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-notoSerif font-bold">Aura Influence</h3>
+<p class="text-on-surface-variant text-sm font-manrope uppercase tracking-widest mt-1">Social Engagement</p>
+</div>
+<div class="space-y-8 mt-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">favorite</span>
+</div>
+<div>
+<p class="text-xs font-manrope font-bold uppercase tracking-widest text-on-surface-variant">Likes</p>
+<p class="text-xl font-notoSerif font-bold">24.8k</p>
+</div>
+</div>
+<div class="text-xs font-bold text-primary">+4.2%</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">visibility</span>
+</div>
+<div>
+<p class="text-xs font-manrope font-bold uppercase tracking-widest text-on-surface-variant">Views</p>
+<p class="text-xl font-notoSerif font-bold">1.2M</p>
+</div>
+</div>
+<div class="text-xs font-bold text-primary">+18.4%</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">comment</span>
+</div>
+<div>
+<p class="text-xs font-manrope font-bold uppercase tracking-widest text-on-surface-variant">Comments</p>
+<p class="text-xl font-notoSerif font-bold">8.4k</p>
+</div>
+</div>
+<div class="text-xs font-bold text-primary">+2.1%</div>
+</div>
+</div>
+<button class="mt-10 w-full py-3 rounded-xl border border-outline-variant/30 text-primary font-manrope font-bold text-xs uppercase tracking-[0.2em] hover:bg-white transition-colors">
+                    View Full Analytics
+                </button>
+</div>
+</section>
+<!-- Featured Upcoming Event (Asymmetric Layout) -->
+<section class="pb-32">
+<div class="bg-surface-container-low rounded-xl overflow-hidden flex flex-col md:flex-row h-auto md:h-96">
+<div class="w-full md:w-1/2 h-64 md:h-full relative">
+<img class="w-full h-full object-cover" data-alt="opulent gala ballroom with warm candle lighting luxurious floral arrangements of white roses and golden décor on high tables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_K5NhdEI41UQkor5ZvSiVzjoOFVEpd5Q6J2z_Sfx3PjBDxJwBz4zRZRXVyOSEbJpIZBnNU_xBZ44Kh0p3cVFXPN2VMl4sgu_vCX6L2GHebSCTGHXsK61gPS1beVC3llyDHEX78QUo5pjhJ8NAQh6YUFOJsLo_HGHt8f4_ULoLEEBrqXhWvvoZkg2Q9ki-SvjgH9i7K7CYpgYNzYQr4rYC_8SHMJ4jgcCZUIrFtTBHWMuBeE3bQ1luwWSvro2jK2tGxL0opGqpnCs"/>
+<div class="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
+</div>
+<div class="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center space-y-6">
+<div>
+<span class="bg-primary/10 text-primary text-[10px] font-manrope font-bold uppercase tracking-[0.25em] px-3 py-1 rounded-full">Featured Project</span>
+<h3 class="text-3xl md:text-4xl font-notoSerif font-bold mt-4">The Crystal Equinox Gala</h3>
+<p class="text-on-surface-variant font-light mt-2 italic leading-relaxed">A transformative sensory experience for the Metropolitan Museum of Art's annual fundraiser.</p>
+</div>
+<div class="flex gap-10">
+<div>
+<p class="text-[10px] font-manrope font-bold uppercase text-primary tracking-widest">Date</p>
+<p class="font-notoSerif font-bold">Oct 24, 2024</p>
+</div>
+<div>
+<p class="text-[10px] font-manrope font-bold uppercase text-primary tracking-widest">Client</p>
+<p class="font-notoSerif font-bold">Met Arts Guild</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fcf9f8]/95 backdrop-blur-xl shadow-[0_-10px_30px_rgba(28,27,27,0.04)] rounded-t-3xl border-t border-[#d0c5af]/20">
+<a class="flex flex-col items-center justify-center text-[#735c00] bg-[#d4af37]/10 rounded-xl px-4 py-2 transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] px-4 py-2 hover:text-[#735c00] transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Events</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] px-4 py-2 hover:text-[#735c00] transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Clients</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] px-4 py-2 hover:text-[#735c00] transition-transform duration-200 active:scale-90" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold mt-1">Calendar</span>
+</a>
+</nav>
+<!-- Desktop Sidebar Navigation Emulation -->
+<aside class="hidden md:flex fixed left-0 top-0 h-full w-20 flex-col items-center py-10 bg-surface-container-low border-r border-outline-variant/10 z-40">
+<div class="mb-12">
+<span class="material-symbols-outlined text-primary text-3xl font-bold" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<div class="flex flex-col gap-10">
+<a class="text-primary group relative" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="absolute left-14 bg-on-surface text-on-primary text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity font-bold">DASHBOARD</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors group relative" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="absolute left-14 bg-on-surface text-on-primary text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity font-bold">EVENTS</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors group relative" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="absolute left-14 bg-on-surface text-on-primary text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity font-bold">CLIENTS</span>
+</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors group relative" href="#">
+<span class="material-symbols-outlined">calendar_today</span>
+<span class="absolute left-14 bg-on-surface text-on-primary text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity font-bold">CALENDAR</span>
+</a>
+</div>
+<div class="mt-auto">
+<a class="text-on-surface-variant hover:text-primary transition-colors group relative" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="absolute left-14 bg-on-surface text-on-primary text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity font-bold">SETTINGS</span>
+</a>
+</div>
+</aside>
+</body></html>

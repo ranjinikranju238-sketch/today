@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Social Media Monitoring | Golden Aura</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "tertiary": "#415ba4",
+                        "on-surface": "#1c1b1b",
+                        "inverse-primary": "#e9c349",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary-fixed-variant": "#574500",
+                        "on-primary-fixed": "#241a00",
+                        "secondary-fixed": "#e5e2e1",
+                        "primary-fixed": "#ffe088",
+                        "on-secondary-fixed-variant": "#474746",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary": "#ffffff",
+                        "primary": "#735c00",
+                        "outline-variant": "#d0c5af",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "surface-tint": "#735c00",
+                        "inverse-surface": "#313030",
+                        "on-secondary-container": "#636262",
+                        "tertiary-fixed": "#dbe1ff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-tertiary-container": "#254188",
+                        "on-tertiary-fixed": "#00174b",
+                        "on-background": "#1c1b1b",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "primary-container": "#d4af37",
+                        "on-surface-variant": "#4d4635",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "outline": "#7f7663",
+                        "on-error": "#ffffff",
+                        "on-primary-container": "#554300",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container": "#f0eded",
+                        "tertiary-container": "#97b0ff",
+                        "surface-container-high": "#eae7e7",
+                        "surface-container-highest": "#e5e2e1",
+                        "secondary": "#5f5e5e",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "secondary-container": "#e2dfde",
+                        "primary-fixed-dim": "#e9c349"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 40px rgba(28,27,27,0.06);
+        }
+        .gold-gradient {
+            background: linear-gradient(45deg, #d4af37, #735c00);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 left-0 w-full flex justify-between items-center px-6 h-16 bg-[#fcf9f8]/95 dark:bg-[#1c1b1b]/95 backdrop-blur-xl z-50 shadow-[0_20px_40px_rgba(28,27,27,0.06)]">
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant/30">
+<img class="w-full h-full object-cover" data-alt="professional executive headshot in soft studio lighting for profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYYVb-4v6A3LwILZo7o8SutuRs8KyE-zpEO9HJJLy0EuJlrd1Pq3nKBXv6hB8vIqucBvW9PyiDhjlWYevkvr-BmbE6dkD5wyLfa9KukuNawKHEtZ8SePNYunAeYFX57YOu298TcgDUf75Ec1qIhqEE0T2-rehdc4dej77KOx6rW2cw4TfcV7Kt3wTHva9l6b1O-KTxgJMzg8uCUMqPteycQsHsfnYcyuAwwtI2FBUs1dPwSaGDTRChZXAiQ041zpY5tQAlQqev--s"/>
+</div>
+<h1 class="text-2xl font-headline italic tracking-tight font-bold text-[#735c00] dark:text-[#d4af37]">Golden Aura</h1>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#4d4635] dark:text-[#d0c5af] hover:opacity-80 transition-opacity active:scale-95 duration-200" data-icon="notifications">notifications</button>
+</div>
+</header>
+<main class="pt-24 pb-32 px-6 max-w-7xl mx-auto space-y-12">
+<!-- Hero Editorial Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<span class="font-label text-[10px] uppercase tracking-widest font-bold text-primary mb-4 block">Pulse Monitoring</span>
+<h2 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface leading-tight">Social <br/><span class="italic text-primary font-normal">Atmosphere</span></h2>
+</div>
+<div class="md:col-span-4 pb-2">
+<p class="text-on-surface-variant leading-relaxed max-w-xs ml-auto text-right">
+                    Curating the digital presence of your most exclusive events with real-time sentiment tracking and engagement depth.
+                </p>
+</div>
+</section>
+<!-- Metrics Bento Grid -->
+<section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Metric Card: Likes -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow flex flex-col justify-between h-48 border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary" data-icon="favorite">favorite</span>
+<span class="text-xs font-bold text-primary bg-primary-fixed/30 px-2 py-1 rounded-full">+12.4%</span>
+</div>
+<div>
+<p class="text-4xl font-headline font-bold text-on-surface">42.8k</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Appreciations</p>
+</div>
+</div>
+<!-- Metric Card: Views -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow flex flex-col justify-between h-48 border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary" data-icon="visibility">visibility</span>
+<span class="text-xs font-bold text-primary bg-primary-fixed/30 px-2 py-1 rounded-full">+8.2%</span>
+</div>
+<div>
+<p class="text-4xl font-headline font-bold text-on-surface">1.2M</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Impressions</p>
+</div>
+</div>
+<!-- Metric Card: Shares -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow flex flex-col justify-between h-48 border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary" data-icon="share">share</span>
+<span class="text-xs font-bold text-primary bg-primary-fixed/30 px-2 py-1 rounded-full">+5.1%</span>
+</div>
+<div>
+<p class="text-4xl font-headline font-bold text-on-surface">8.4k</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Circulation</p>
+</div>
+</div>
+<!-- Metric Card: Comments -->
+<div class="bg-surface-container-lowest p-8 rounded-xl editorial-shadow flex flex-col justify-between h-48 border border-outline-variant/10">
+<div class="flex justify-between items-start">
+<span class="material-symbols-outlined text-primary" data-icon="forum">forum</span>
+<span class="text-xs font-bold text-primary bg-primary-fixed/30 px-2 py-1 rounded-full">+15.7%</span>
+</div>
+<div>
+<p class="text-4xl font-headline font-bold text-on-surface">3.2k</p>
+<p class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant mt-1">Dialogue</p>
+</div>
+</div>
+</section>
+<!-- Analysis & Interaction Section -->
+<section class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<!-- Sentiment Analysis -->
+<div class="lg:col-span-1 space-y-8">
+<div class="bg-surface-container-low p-10 rounded-xl space-y-8 relative overflow-hidden border border-outline-variant/20">
+<div class="relative z-10">
+<h3 class="font-headline text-2xl font-bold mb-2">Sentiment Aura</h3>
+<p class="text-sm text-on-surface-variant mb-10">Qualitative emotional resonance across all platforms.</p>
+<!-- Donut Chart Implementation -->
+<div class="relative flex items-center justify-center mb-10">
+<svg class="w-48 h-48 transform -rotate-90">
+<circle class="text-outline-variant/20" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-dasharray="552.92" stroke-dashoffset="110.58" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-3xl font-headline font-bold text-primary">82%</span>
+<span class="text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">Positive</span>
+</div>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center text-sm">
+<span class="flex items-center gap-2 font-medium"><span class="w-2 h-2 rounded-full bg-primary"></span> Positive</span>
+<span class="font-bold">82%</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="flex items-center gap-2 font-medium"><span class="w-2 h-2 rounded-full bg-outline"></span> Neutral</span>
+<span class="font-bold">14%</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="flex items-center gap-2 font-medium"><span class="w-2 h-2 rounded-full bg-error"></span> Critical</span>
+<span class="font-bold">4%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Comments List -->
+<div class="lg:col-span-2 space-y-6">
+<div class="flex justify-between items-end mb-4">
+<h3 class="font-headline text-2xl font-bold">Recent Dialogue</h3>
+<button class="text-[10px] uppercase tracking-widest font-bold text-primary hover:underline underline-offset-4">View All Feed</button>
+</div>
+<div class="space-y-6">
+<!-- Comment Item 1 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow border border-outline-variant/5 flex gap-6">
+<div class="flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="luxury profile portrait of a woman in high-end fashion setting, soft golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHn57i1hS8ljW5-2KWqdpNs9h7NGm85L7UpEISAzYXdobTt-U_T0OYxKoWbIxoisZsm8fpzH7nNyhlDEMWth40YBeLzL8p99y9KnXdsR3usQJ5gmtROmpCiP7Ak4Tb4J1dF6X2bdRoeFW-EK5Z5fxMEGmi8o2yBmx4iTHCyQqa4YRIJhNbyAZmqy2EqOsd1EQhKrIUWl59izhnO7KWw92bXieEGKlWvtng3VYTOa3H_Ci9xyswKDyUBZTwj0LN1tlmuPKvTPLmusg"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="font-bold text-sm">Elena Valance</h4>
+<p class="text-[10px] text-on-surface-variant">2m ago • Instagram</p>
+</div>
+<div class="flex gap-2">
+<button class="material-symbols-outlined text-primary-container text-lg hover:text-primary transition-colors" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</button>
+<button class="material-symbols-outlined text-outline-variant text-lg hover:text-primary transition-colors" data-icon="reply">reply</button>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">The attention to detail at the Grand Gala was simply divine. The floral arrangements were a masterpiece of curation.</p>
+</div>
+</div>
+<!-- Comment Item 2 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow border border-outline-variant/5 flex gap-6">
+<div class="flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="portrait of a sophisticated man in a charcoal suit, soft focused background, professional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyJ9MlEsjgwtppLDXknPNBzzcDXECf5jX4CzbL0vDv4raYeY2dZAff1Pk7xoGY6EshHDjH5GaZA_to4OZtZy4nHWVNeoAC0vfPLD0c14YeL03I1F_VNAtF3xJ_Fml2y9BhvhTbbq-x_aGkQoM4A-XU2apZXehrJKEiyp-VgB4m1Ffrrvl7bGzqleanbhfnxbInLxMq3lgQtiRAm2WD7TaL-XZ72r-gBUlphGFv2fYneam62akM7MFSB3_9oxvCj5Lr1RUls2XCQzY"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="font-bold text-sm">Julian Rossi</h4>
+<p class="text-[10px] text-on-surface-variant">15m ago • LinkedIn</p>
+</div>
+<div class="flex gap-2">
+<button class="material-symbols-outlined text-outline-variant text-lg hover:text-primary transition-colors" data-icon="star">star</button>
+<button class="material-symbols-outlined text-outline-variant text-lg hover:text-primary transition-colors" data-icon="reply">reply</button>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Exceptional networking environment. Golden Aura continues to set the gold standard for executive events in the city.</p>
+</div>
+</div>
+<!-- Comment Item 3 -->
+<div class="bg-surface-container-lowest p-6 rounded-xl editorial-shadow border border-outline-variant/5 flex gap-6">
+<div class="flex-shrink-0">
+<img class="w-12 h-12 rounded-full object-cover" data-alt="portrait of a creative professional woman with warm natural lighting and artistic mood" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKV4Mv6LLD2scMePckibll_0GaxnDyrYhY9Dv3EM-_S4ZYPOs5hZPo-kUZSp5YO0aq_szuWgFA80fKHeVU0UDX-AhMg05iZ_RtyCa932nHj205do15A_MuMfsNtTOBJdQ2vDi1J_jC4hmN1LlrS0RnU5P2lYnjn7ILi_IniVMUfuEIGBponVfB9G-89Z5nNUKVD6o7Deo-eQhWZ6D5saUUG-Pux3qIVfOWYL8FY3LDhlZStAoWEtD1pDfoyR17ZDJqmBHTDSTiGcI"/>
+</div>
+<div class="flex-grow">
+<div class="flex justify-between items-start mb-2">
+<div>
+<h4 class="font-bold text-sm">Sasha Myer</h4>
+<p class="text-[10px] text-on-surface-variant">1h ago • Twitter</p>
+</div>
+<div class="flex gap-2">
+<button class="material-symbols-outlined text-primary-container text-lg hover:text-primary transition-colors" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</button>
+<button class="material-symbols-outlined text-outline-variant text-lg hover:text-primary transition-colors" data-icon="reply">reply</button>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">That lighting design! My feed is still buzzing with the shots from last night. Perfection.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Engagement Over Time (Contextual Chart Placeholder) -->
+<section class="bg-surface-container-low p-10 rounded-xl relative overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-12">
+<div>
+<h3 class="font-headline text-3xl font-bold mb-2">Engagement Depth</h3>
+<p class="text-on-surface-variant">Comparative growth across elite channels over the last quarter.</p>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 text-xs font-bold">
+<span class="w-3 h-3 rounded-full gold-gradient"></span> IG
+                    </div>
+<div class="flex items-center gap-2 text-xs font-bold text-on-surface-variant">
+<span class="w-3 h-3 rounded-full bg-outline-variant"></span> LI
+                    </div>
+</div>
+</div>
+<div class="h-64 w-full flex items-end gap-2 px-4">
+<div class="flex-grow bg-outline-variant/10 rounded-t-lg h-[40%] hover:bg-primary/20 transition-colors"></div>
+<div class="flex-grow bg-outline-variant/10 rounded-t-lg h-[55%] hover:bg-primary/20 transition-colors"></div>
+<div class="flex-grow bg-primary-container/40 rounded-t-lg h-[70%] hover:bg-primary/60 transition-colors"></div>
+<div class="flex-grow bg-outline-variant/10 rounded-t-lg h-[60%] hover:bg-primary/20 transition-colors"></div>
+<div class="flex-grow bg-primary-container/40 rounded-t-lg h-[85%] hover:bg-primary/60 transition-colors"></div>
+<div class="flex-grow bg-outline-variant/10 rounded-t-lg h-[50%] hover:bg-primary/20 transition-colors"></div>
+<div class="flex-grow bg-primary-container/40 rounded-t-lg h-[95%] hover:bg-primary/60 transition-colors"></div>
+<div class="flex-grow bg-outline-variant/10 rounded-t-lg h-[65%] hover:bg-primary/20 transition-colors"></div>
+</div>
+<div class="flex justify-between w-full mt-4 px-4 text-[10px] uppercase tracking-widest font-bold text-on-surface-variant">
+<span>Week 1</span>
+<span>Week 2</span>
+<span>Week 3</span>
+<span>Week 4</span>
+<span>Week 5</span>
+<span>Week 6</span>
+<span>Week 7</span>
+<span>Week 8</span>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-2 bg-[#fcf9f8]/95 dark:bg-[#1c1b1b]/95 backdrop-blur-xl rounded-t-3xl border-t border-[#d0c5af]/20 shadow-[0_-10px_30px_rgba(28,27,27,0.04)]">
+<a class="flex flex-col items-center justify-center text-[#735c00] dark:text-[#d4af37] bg-[#d4af37]/10 rounded-xl px-4 py-2 active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="dashboard">dashboard</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] dark:text-[#d0c5af] px-4 py-2 hover:text-[#735c00] dark:hover:text-[#d4af37] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="event">event</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold">Events</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] dark:text-[#d0c5af] px-4 py-2 hover:text-[#735c00] dark:hover:text-[#d4af37] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="group">group</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold">Clients</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#4d4635] dark:text-[#d0c5af] px-4 py-2 hover:text-[#735c00] dark:hover:text-[#d4af37] active:scale-90 transition-transform duration-200" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="calendar_today">calendar_today</span>
+<span class="font-manrope text-[10px] uppercase tracking-widest font-bold">Calendar</span>
+</a>
+</nav>
+</body></html>
